@@ -1,9 +1,12 @@
 <header>
-    <nav>
-        <ul>
-            <li><a routerLink="/">Home</a></li>
-            <li><a routerLink="/about">About</a></li>
-            <li><a routerLink="['/info',1]">Info</a></li>
-        </ul>
-    </nav>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li><a class="menu-link" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+                <!--Route with parameter example-->
+                <li><a class="menu-link" [routerLink]="['/about',100000]" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">About</a></li>
+                <li><a class="menu-link" routerLink="/license" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">License</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
