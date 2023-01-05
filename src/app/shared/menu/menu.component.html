@@ -4,7 +4,9 @@
             <ul>
                 <li><a class="menu-link" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
                 <!--Route with parameter example-->
-                <li><a class="menu-link" [routerLink]="['/about',100000]" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">About</a></li>
+                <!--<li><a class="menu-link" [routerLink]="['/about',100000]" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">About</a></li>-->
+                <li><a class="menu-link" routerLink="/about" [routerLinkActive]="['active']">About</a></li>
+                <li><a class="menu-link" routerLink="/dashboard" [routerLinkActive]="['active']">Dashboard</a></li>
                 <li><a class="menu-link" routerLink="/license" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">License</a></li>
             </ul>
         </nav>
